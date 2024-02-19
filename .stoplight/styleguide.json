@@ -10,29 +10,27 @@
     "oas3.1"
   ],
   "aliases": {
-    "test": {
-      "id": "EJESjcOgcTqfUTCmXtxw7",
-      "name": "test",
+    "": {
+      "id": "sp1wMnmKAkjrgEvoMXK8f",
       "targets": []
     }
   },
   "rules": {
-    "test": {
-      "id": "7ucn2_9qDxrWfciVaIvay",
+    "": {
+      "id": "tXKSLtNfiXpS5MBhxOx8u",
       "given": [],
       "severity": "error",
       "then": {
         "function": ""
-      },
-      "name": "test"
+      }
     }
   },
   "x-embeddedFunctions": [
     {
-      "id": "8T-xOw1PnDo7F0RyyVsCp",
+      "id": "0uJYLBUf9m7YY1MBybCRk",
       "extendedFrom": "",
-      "name": "test",
-      "content": "import { createRulesetFunction } from '@stoplight/spectral-core';\n\nexport default createRulesetFunction(\n  {\n    input: null,\n    options: {\n      type: \"object\",\n      additionalProperties: false,\n\n      properties: {\n        exceptions: {\n          type: \"array\",\n\n          items: {\n            type: \"string\"\n          }\n        }\n      }\n    },\n  },\n  // https://github.com/stoplightio/spectral/blob/develop/docs/guides/5-custom-functions.md#writing-functions\n  function test(input, options, context) {},\n);"
+      "name": "new-function",
+      "content": "import { createRulesetFunction } from '@stoplight/spectral-core';\n\nexport default createRulesetFunction(\n  {\n    input: null,\n    options: {\n      type: \"object\",\n      additionalProperties: false,\n\n      properties: {\n        exceptions: {\n          type: \"array\",\n\n          items: {\n            type: \"string\"\n          }\n        }\n      }\n    },\n  },\n  // https://github.com/stoplightio/spectral/blob/develop/docs/guides/5-custom-functions.md#writing-functions\n  function new_function(input, options, context) {},\n);"
     }
   ],
   "extendedDefault": false
